@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- //Authors: Michael Theel, Jin Kim -->
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ListView?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controller">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="523.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+      <children>
+            <ListView fx:id="listView" layoutX="14.0" layoutY="52.0" prefHeight="304.0" prefWidth="150.0" />
+            <Label layoutX="415.0" layoutY="103.0" prefHeight="18.0" prefWidth="28.0" text="Song" />
+            <Label layoutX="415.0" layoutY="144.0" text="Artist" />
+            <Label layoutX="411.0" layoutY="183.0" text="Album" />
+            <TextField fx:id="SongName" layoutX="465.0" layoutY="100.0" />
+            <TextField fx:id="ArtistName" layoutX="465.0" layoutY="140.0" />
+            <TextField fx:id="AlbumName" layoutX="465.0" layoutY="179.0" />
+            <TextField fx:id="SongDesc" layoutX="465.0" layoutY="220.0" />
+            <Button fx:id="addSong" onAction="#add" layoutX="465.0" layoutY="289.0" mnemonicParsing="false" text="Add" />
+            <Button fx:id="editSong" onAction="#edit" layoutX="529.0" layoutY="289.0" mnemonicParsing="false" text="Edit Selected" />
+            <Button fx:id="deletes" onAction="#del" layoutX="208.0" layoutY="289.0" mnemonicParsing="false" text="Delete Selected" />
+            <TextArea fx:id="details" editable="false" layoutX="178.0" layoutY="52.0" prefHeight="219.0" prefWidth="159.0" />
+            <Label layoutX="238.0" layoutY="29.0" prefHeight="18.0" prefWidth="38.0" text="Details" />
+            <Label layoutX="415.0" layoutY="220.0" text="Year" />
+            <Label layoutX="72.0" layoutY="29.0" prefHeight="18.0" prefWidth="35.0" text="Songs" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
