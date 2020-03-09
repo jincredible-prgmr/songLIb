@@ -1,4 +1,4 @@
-//Authors: Michael Theel, Jin Kim
+//Authors: Jin Kim
 package view;
 import java.io.*;
 import java.util.*;
